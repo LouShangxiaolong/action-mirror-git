@@ -39,11 +39,11 @@ jobs:
         with:
           source_protocol: https
           source_host: github.com
-          source_username: k8scat
+          source_username: xiaolong
           source_token: ${{ secrets.GITHUB_TOKEN }}
           dest_protocol: https
-          dest_host: gitlab.com
-          dest_username: k8scat
+          dest_host: git.loushangkeji.com
+          dest_username: xiaolong
           dest_token: ${{ secrets.DEST_TOKEN_GITLAB }}
           mirror_repos: ${{ steps.list_repos.outputs.repo_list }}
           lark_webhook: ${{ secrets.LARK_WEBHOOK }}
